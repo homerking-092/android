@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 텍스트뷰, text="어플보이기", id값부여 -->
+
+    <!-- 체크박스, text="체크시 보임" id값부여 -->
+
+    <!-- 텍스트뷰, text="보고싶은 사진 " android:visibility="invisible-->
+    <!-- 그룹 내부에 라디오버튼, id값부여 -->
+
+    <!-- 버튼, text="선택 완료", invisible id부여 -->
+    <!-- 이미지뷰, 사진 수만큼 생성 id값 부여, invisible -->
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:text="어플보이기"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="체크시 보임"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="보고싶은 사진"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/check"
+        app:layout_constraintTop_toBottomOf="@+id/check"></TextView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="선택 완료"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg1" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:src="@drawable/a"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/img2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:src="@drawable/b"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+    <!-- 라디오그룹 시작 -->
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="71dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2">
+
+        <RadioButton
+            android:id="@+id/son1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="son1"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/son2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="son2"
+            android:visibility="invisible" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">widgetPrj</string>
+    <string name="textView1">성별선택</string>
+</resources>

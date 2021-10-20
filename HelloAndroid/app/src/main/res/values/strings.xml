@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="strBtn1">버튼이름은 여기서</string>
+    <string name="strBtn2">버튼21</string>
+</resources>
