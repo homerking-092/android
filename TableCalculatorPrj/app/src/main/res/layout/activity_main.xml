@@ -48,6 +48,9 @@
         <Button
             android:id="@+id/btn5"
             android:text="5"/>
+        <Button
+            android:id="@+id/clear"
+            android:text="c"/>
     </TableRow>
     <TableRow>
         <Button

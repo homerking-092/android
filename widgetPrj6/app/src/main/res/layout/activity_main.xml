@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:columnCount="4"
+    android:rowCount="3">
+
+    <!-- 3 * 4 형태의 격자 구역 설정
+     가로나 세로방향으로 여러칸을 점유시킬 수 있음-->
+
+    <Button
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill_vertical"
+        android:text="버튼1"
+        />
+
+    <Button
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:text="버튼2"
+        />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="0"
+        android:text="버튼3"
+        />
+    <Button
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="버튼4"
+        />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="1"
+        android:text="버튼5"
+        />
+    <Button
+        android:layout_column="3"
+        android:layout_row="1"
+        android:text="버튼6"
+        />
+
+
+
+</GridLayout>
