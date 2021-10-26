@@ -10,6 +10,8 @@ import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     TimePicker tPicker;
@@ -76,14 +78,25 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 1. 시간을 얻어서 text1에 출력(연월일시분)
+
+                // 현재 시간 얻어오기
+                long now = System.currentTimeMillis();
+                Date date = new Date(now);
+
+                // 1. 시간을 얻어서 dPicker, tPicker에 갱신
+                dPicker.updateDate((date.getYear()+ 1900),
+                                  (date.getMonth()),
+                                    date.getDate());
+                tPicker.setHour(date.getHours());
+                tPicker.setMinute(date.getMinutes());
+
                 int year = dPicker.getYear();
                 int month = (dPicker.getMonth() + 1);
                 int day = dPicker.getDayOfMonth();
                 int hour = tPicker.getHour();
                 int minute = tPicker.getMinute();
 
-                text2.setText(year + "년/" + (month + 1) + "월/" + day + "일/" + hour + "시/" + minute + "분" );
+                text2.setText(year + "년/" + (month ) + "월/" + day + "일/" + hour + "시/" + minute + "분" );
                 // 2, btn2와 활상화상태로 만들고, btn1은 못쓰게 만들어야함
                 btn2.setEnabled(false);
 
