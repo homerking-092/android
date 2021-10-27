@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/upSize"
+        android:title="2배 사이즈"
+        ></item>
+    <item
+        android:id="@+id/rotate"
+        android:title="버튼 45도 회전"
+        ></item>
+</menu>

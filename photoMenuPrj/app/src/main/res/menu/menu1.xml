@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/son"
+        android:title="손흥민"
+        ></item>
+    <item
+        android:id="@+id/mb"
+        android:title="음바페"
+        ></item>
+    <item
+        android:id="@+id/haal"
+        android:title="홀란드"
+        ></item>
+</menu>
