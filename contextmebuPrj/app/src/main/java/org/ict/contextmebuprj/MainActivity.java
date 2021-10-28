@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         super.onContextItemSelected(item);
 
+        Log.d("아이템 아이디: ", item.getItemId() + "");
+
         if (item.getItemId() == R.id.backRed){
             bgl.setBackgroundColor(Color.RED);
         }else if (item.getItemId() == R.id.backBlue){
